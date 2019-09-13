@@ -40,6 +40,15 @@ public class App
         forestWalks.name="ForestWalks";
         forestWalks.increaseMood=2;
 
+        RescuerFood pizza = new RescuerFood();
+        pizza.name="Pizza";
+        pizza.price = 30;
+        pizza.decreaseHunger=-2;
+
+
+
+
+
 
     }
 }

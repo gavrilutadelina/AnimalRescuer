@@ -5,4 +5,8 @@ public class Game {
     Doctor doctor;
     Animal dog;
 
+//    MedicalTreatment medicalTreatment;
+//    AnimalFood dogFood;
+//    Activity forestWalks;
+
 }

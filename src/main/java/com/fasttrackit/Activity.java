@@ -2,5 +2,10 @@ package com.fasttrackit;
 
 public class Activity {
     String name;
-    int increaseMood;
+
+    int increaseAnimalMood;
+    int increaseRescuerlMood;
+    int price;
+    int increaseHealth;
+
 }

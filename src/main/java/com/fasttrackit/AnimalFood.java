@@ -8,4 +8,11 @@ public class AnimalFood {
     int availabilyInStock;
     int cantity;
     Date expirationDate;
+
+    int decreaseHunger;
+    boolean medicalTreatment;
+    int increaseHealth;
+    int increaseMood;
+
+
 }
