@@ -17,8 +17,8 @@ public class App
         Animal dog = new Animal();
         dog.name = "Lola";
         dog.age=3;
-        dog.favoriteActivity="forestWalks";
-        dog.favoriteFood="RoyalCanin";
+        dog.favouriteActivity="forestWalks";
+        dog.favouriteFood="RoyalCanin";
         dog.healthLevel=7;
         dog.hungerLevel=8;
         dog.moodLevel=9;
@@ -38,7 +38,7 @@ public class App
 
         Activity forestWalks=new Activity();
         forestWalks.name="ForestWalks";
-        forestWalks.increaseMood=2;
+        forestWalks.increaseAnimalMood=2;
 
         RescuerFood pizza = new RescuerFood();
         pizza.name="Pizza";
