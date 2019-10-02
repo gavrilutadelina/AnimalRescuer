@@ -1,6 +1,6 @@
 package com.fasttrackit;
 
-public class Game {
+public class Game extends Activity{
     Rescuer rescuer;
     Doctor doctor;
     Animal dog;
