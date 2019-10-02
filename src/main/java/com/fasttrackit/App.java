@@ -10,45 +10,37 @@ public class App
     {
         System.out.println( "Hello World!" );
 
-        Rescuer rescuer = new Rescuer();
-        rescuer.setName("Mihai");
+        Rescuer rescuer = new Rescuer("Mihai", 45);
         rescuer.setMoney(1200);
 
-        Animal dog = new Animal();
-        dog.name = "Lola";
-        dog.age=3;
-        dog.favouriteActivity="forestWalks";
-        dog.favouriteFood="RoyalCanin";
-        dog.healthLevel=7;
-        dog.hungerLevel=8;
-        dog.moodLevel=9;
+        Animal dog = new Animal("Lola",3,"black");
+        dog.setFavouriteActivity("Forest Walks");
+        dog.setFavouriteFood("Royal Canin");
+        dog.setHealthLevel(7);
+        dog.setHealthLevel(8);
+        dog.setMoodLevel(9);
 
-        Doctor doctor = new Doctor();
-        doctor.name="John";
-        doctor.specialization="DogConsult";
+        Doctor doctor = new Doctor("John", "DogConsult",150);
+        doctor.setAge(42);
+        doctor.setSuggestMedicalTreatment("Dog Food");
 
-        Game game=new Game();
+        Game game=new Game(rescuer,dog);
+        game.setDoctor(doctor);
+        game.setDog(dog);
+        game.setRescuer(rescuer);
 
-        AnimalFood dogFood = new AnimalFood();
-        dogFood.availabilyInStock=5;
-        dogFood.cantity=3;
-        //dogFood.expirationDate=12.03.2020;
-        dogFood.price=80;
-        dogFood.name="RoyalCanin";
+        AnimalFood dogFood = new AnimalFood("Fish",37,3);
+        dogFood.setAvailabilyInStock(155);
+        dogFood.setCantity(400);
+        dogFood.setExpirationDate("20 ianuarie 2020");
+        dogFood.setIncreaseHealth(5);
+        dogFood.setMedicalTreatment(true);
 
-        Activity forestWalks=new Activity();
-        forestWalks.name="ForestWalks";
-        forestWalks.increaseAnimalMood=2;
+        Activity forestWalks=new Activity("Forest Walks",7);
+        forestWalks.setIncreaseAnimalMood(10);
+        forestWalks.setIncreaseRescuerlMood(10);
+        forestWalks.setPrice(10);
 
-        RescuerFood pizza = new RescuerFood();
-        pizza.name="Pizza";
-        pizza.price = 30;
-        pizza.decreaseHunger=-2;
-
-
-
-
-
-
+        RescuerFood pizza = new RescuerFood("Capriciosa",17,10);
     }
 }
