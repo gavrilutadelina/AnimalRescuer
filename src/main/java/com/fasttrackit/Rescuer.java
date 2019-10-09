@@ -6,6 +6,14 @@ public class Rescuer extends Entity {
     private String rescuerFavoriteActivity;
     private String rescuerFavoriteFood;
 
+    public void AnimalFeed(Animal animal, AnimalFood animalFood) {
+        System.out.println(getName() + " just gave some " + animalFood.getName() + " food to " + animal.getName() + ".");
+    }
+
+    public void RecreationalActivity(Animal animal, Activity activity) {
+        System.out.println(getName() + " have some " + activity.getName() + " activity with " + animal.getName() + ". ");
+    }
+
     public Rescuer(String name, int age) {
         super.setName(name);
         super.setAge(age);
