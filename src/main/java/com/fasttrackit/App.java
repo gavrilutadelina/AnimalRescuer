@@ -16,6 +16,14 @@ public class App {
         dog.setHealthLevel(7);
         dog.setHealthLevel(8);
         dog.setMoodLevel(9);
+        dog.positiveMood();
+
+        Animal cat=new Cat("Mili",1,"gray");
+        cat.positiveMood();
+        Animal dog2=new Dog("Sisi",4,"white");
+        dog2.positiveMood();
+        Animal bird=new Bird("Geny",1,"Yellow");
+        bird.positiveMood();
 
         Doctor doctor = new Doctor("John", "DogConsult", 150);
         doctor.setAge(42);

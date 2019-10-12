@@ -9,6 +9,10 @@ public class Animal extends Entity{
     private int careLevel;
     private String color;
 
+    public void positiveMood(){
+        System.out.println("Animal is happy.");
+    }
+
     public Animal(String name, int age, String color) {
         super.setName(name);
         super.setAge(age);
