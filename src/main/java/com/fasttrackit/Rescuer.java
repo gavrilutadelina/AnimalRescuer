@@ -30,10 +30,7 @@ public class Rescuer extends Entity {
         System.out.println(animal.getName()+"'s hunger level: "+animal.getHungerLevel());
     }
 
-//    public void buyFood(){
-//        animalFoodCantity=animalFoodCantity+7;
-//        money=money-a
-//    }
+
 
     public void RecreationalActivity(Animal animal, Activity activity) {
         animal.setMoodLevel(animal.getMoodLevel()+activity.getIncreaseAnimalMood());
