@@ -40,6 +40,7 @@ public class App {
         dogFood.setExpirationDate("20 ianuarie 2020");
         dogFood.setIncreaseHealth(5);
         dogFood.setMedicalTreatment(true);
+        dogFood.setDecreaseHunger(1);
 
         Activity forestWalks = new Activity("Forest Walks", 7);
         forestWalks.setIncreaseAnimalMood(10);
